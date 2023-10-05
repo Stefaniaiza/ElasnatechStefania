@@ -1,0 +1,105 @@
+/*Zerando o documento configuração geral*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border:none;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+
+}
+
+.flex{
+    display:flex;
+}
+
+/* estilo header */
+.interface {
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+header {
+    padding:40px 4%;
+    
+}
+
+header a {
+    color:rgb(241, 207, 223);
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+header a:hover{
+    color:rgb(231, 38, 128);
+    transform:scale(1.2);
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    }
+
+    /*estilo do topo*/
+
+.topo-do-site {
+padding: 40px 4%;
+
+}
+
+@keyframes flutuar {
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
+    
+}
+
+.img-topo-site img {
+    position: relative;
+    border-radius: 50%;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap:100px; 
+}
+
+.topo-do-site h1{
+    color:rgb(223, 203, 216);
+    font-size:42px;
+    line-height: 40px;
+
+}
+
+.topo-do-site .txt-topo-site p{
+    color:rgb(223, 211, 220);
+    margin:40px 0;
+
+}
